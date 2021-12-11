@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/api/v1/movies",
+    "method": "GET",
+    "endpoint_filter": "list_movie",
+    "middleware": [
+      "app_key"
+    ]
+  },
+  {
+    "path": "/api/v1/movies/:imdb_id",
+    "method": "GET",
+    "endpoint_filter": "detail_movie",
+    "middleware": [
+      "app_key"
+    ]
+  }
+]
